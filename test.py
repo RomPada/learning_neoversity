@@ -1,8 +1,12 @@
-order1 = [1, 2, 3, 4]
-order2 = (1, 2, 3, 4)
-order3 = {1, 2, 3, 4}
-order4 = {1: "q", 2: "w", 3: "e", 4: "r"}
+def format_string(string, length):
+    l = len(string)
+    if l >= length:
+        return(string)
+    else:
+        gap = (length - len(string)) // 2
+        string_gap = " " * gap
+        string = string_gap + string
+        return(string)
 
-#order = order4(1)
 
-print(order4)
+        
