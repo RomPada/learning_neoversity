@@ -1,3 +1,4 @@
+
 raw_numbers = [
     "067\\t123 4567",
      "    +38(050)123-32-34",
@@ -12,8 +13,8 @@ raw_numbers = [
     "38050 111 22 11   ",
     "(095) 234-5678\\n",
     "+380 44 123 4567",
-    "380501234567",
-]
+    "380501234567"
+    ]
 
 
 def replace (raw_numbers): 
@@ -42,9 +43,7 @@ def replace (raw_numbers):
         new_element = normalize(new_element)
         raw_good_numbers.append(new_element)  # результати додаємо у новий список
         index += 1
-    return raw_good_numbers 
+    print("Нормалізовані номери телефонів для SMS-розсилки:", raw_good_numbers) # вивід функції відповідно до прикладу у задачі
 
-raw_numbers = replace(raw_numbers)
 
-print("Нормалізовані номери телефонів для SMS-розсилки:", raw_numbers) # вивід функції відповідно до прикладу у задачі
-
+replace (raw_numbers)

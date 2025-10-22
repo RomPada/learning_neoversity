@@ -1,6 +1,6 @@
 
-
 date = "2020-10-09"
+
 
 def get_days_from_today(date):
     from datetime import datetime
@@ -17,5 +17,5 @@ def get_days_from_today(date):
     except:
         print("Дата у неправильному форматі.")
 
-get_days_from_today(date)
 
+get_days_from_today(date)
