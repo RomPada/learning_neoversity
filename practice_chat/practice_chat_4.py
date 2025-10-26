@@ -1,3 +1,4 @@
+
 age = int(input("Enter your age: "))
 
 if age == 0:
@@ -8,8 +9,6 @@ elif 14 <= age <= 17:
     print("You are teenager.")
 else:
     print("You are adult.")
-
-
 
 # while True:
 #     age = int(input("Enter your age: "))

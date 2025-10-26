@@ -39,7 +39,8 @@ def get_upcoming_birthdays(users):
                     upcoming_birthdays.append({"name" : user["name"], "congratulation_date" : birthday_this_year})
         except:
             print(f"{user["name"]} - дата народження у неправильному форматі. Ведіть дату у форматі РРРР.ММ.ДД.")
-    print("Список привітань на цьому тижні:", upcoming_birthdays) 
+    print("Список привітань на цьому тижні:", upcoming_birthdays)
+    return upcoming_birthdays 
 
 
 get_upcoming_birthdays(users)

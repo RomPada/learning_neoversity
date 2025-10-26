@@ -13,9 +13,10 @@ def get_numbers_ticket(min, max, quantity):
         list_number.extend(random.sample(range(min, max), quantity)) # додаємо у список рандомні унікальні числа з виборки
         list_number.sort() # сортуємо від меншого до більшого
         print(list_number)
-
+        return list_number
     else: # Якщо параметри не відповідають заданим обмеженням, функція повертає пустий список.
         print(list_number)
+        return list_number
     
     
 get_numbers_ticket(min, max, quantity)

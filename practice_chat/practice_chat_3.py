@@ -1,3 +1,4 @@
+
 number = int(input("Input number: "))
 
 if number % 2:
@@ -6,7 +7,6 @@ if number % 2:
     print("Число непарне")
 else:
    print("Число парне")
-
 
 num = int(input("Enter a number: "))
 if num > 0: 

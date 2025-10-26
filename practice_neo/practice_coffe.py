@@ -1,3 +1,4 @@
+
 count_cruasan = int(input("Введіть кількість круасанів: "))
 prise_cruasan = 1.04
 cost_cruasan = count_cruasan * prise_cruasan
