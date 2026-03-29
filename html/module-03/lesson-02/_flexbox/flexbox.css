@@ -1,0 +1,103 @@
+/* #region Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 48px;
+  margin: 50px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
+  border: 5px solid rebeccapurple;
+  border-radius: 16px;
+}
+
+.item {
+  width: 160px;
+  /* height: 160px; */
+
+  background-color: lightgreen;
+  color: darkgreen;
+  border: 5px solid darkgreen;
+  border-radius: 16px;
+  text-align: center;
+  line-height: 160px;
+}
+/* #endregion */
+
+/* #region Flexbox */
+.container {
+  /* --items: 4;
+  --indent: 30px; */
+
+  /* min-height: 600px; */
+
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent); */
+  /* gap: 20px; */
+  /* column-gap: 24px;
+  row-gap: 48px; */
+  /* gap: 48px 24px; */
+
+  /* Default properties */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* flex-wrap: nowrap; */
+  /* align-content: stretch; */
+}
+.item {
+  /* width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items)); */
+
+  /* Default properties */
+  /* flex-shrink: 1; */
+  /* flex-grow: 0; */
+  /* flex-basis: auto; */
+}
+/* #endregion */
+
+/* Flex card-set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-item {
+  width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+:root {
+  --items: 1;
+  --indent: 10px;
+}
+
+.contacts {
+  --items: 3;
+  --indent: 20px;
+}
+
+.about {
+  --items: 6;
+  --indent: 40px;
+  overflow-x: auto;
+
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  .card-set-item {
+    width: 300px;
+    flex-shrink: 0;
+  }
+}
